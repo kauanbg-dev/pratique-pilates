@@ -1,6 +1,6 @@
 /* RESPONSIVO MOBILE */
 
-@media (max-width: 768px){
+@media (max-width:768px){
 
 
     /* GERAL */
@@ -8,7 +8,6 @@
     .container{
 
         width:90%;
-        max-width:100%;
 
     }
 
@@ -30,16 +29,14 @@
     .section-subtitle{
 
         font-size:1rem;
+
         margin-bottom:35px;
 
     }
 
 
 
-/* HEADER MOBILE */
-
-@media (max-width:768px){
-
+    /* HEADER */
 
     header{
 
@@ -78,6 +75,7 @@
         position:absolute;
 
         top:80px;
+
         left:0;
 
         width:100%;
@@ -106,13 +104,6 @@
     }
 
 
-    .menu a{
-
-        font-size:16px;
-
-    }
-
-
     nav > .btn{
 
         display:none;
@@ -120,45 +111,59 @@
     }
 
 
-}
 
-
-    /* HERO */
+    /* HERO NOVO */
 
     #home{
 
-        min-height:90vh;
+        min-height:auto;
 
-        padding-top:80px;
+        padding-top:130px;
+
+        padding-bottom:60px;
 
         text-align:center;
 
-        background-position:center;
+    }
+
+
+
+    .hero-container{
+
+        flex-direction:column;
+
+        gap:40px;
 
     }
+
 
 
     .hero-content{
 
-        width:100%;
+        max-width:100%;
 
     }
+
 
 
     .hero-content h1{
 
         font-size:2.2rem;
+
         line-height:1.3;
 
     }
 
 
+
     .hero-content p{
 
         font-size:1rem;
+
         line-height:1.6;
 
     }
+
 
 
     .hero-buttons{
@@ -167,9 +172,8 @@
 
         gap:15px;
 
-        width:100%;
-
     }
+
 
 
     .hero-buttons a{
@@ -178,51 +182,75 @@
 
     }
 
-/* SOBRE */
-
-.sobre-container{
-
-    flex-direction:column;
-    gap:25px;
-
-}
 
 
-.sobre-img{
+    .hero-image img{
 
-    width:85%;
-    margin:auto;
+        width:100%;
 
-}
+        max-width:350px;
 
+        margin:auto;
 
-.sobre-img img{
+        border-radius:25px;
 
-    width:100%;
-    height:250px;
-    object-fit:cover;
-    border-radius:15px;
-
-}
+    }
 
 
-.sobre-texto .section-title{
-
-    text-align:center;
-
-}
 
 
-.sobre-texto p{
+    /* SOBRE */
 
-    text-align:center;
 
-}
+    .sobre-container{
+
+        flex-direction:column;
+
+        gap:30px;
+
+    }
+
+
+
+    .sobre-img{
+
+        width:100%;
+
+    }
+
+
+
+    .sobre-img img{
+
+        height:250px;
+
+        object-fit:cover;
+
+        border-radius:20px;
+
+    }
+
+
+
+    .sobre-texto .section-title{
+
+        text-align:center;
+
+    }
+
+
+
+    .sobre-texto p{
+
+        text-align:center;
+
+    }
 
 
 
 
     /* BENEFÍCIOS */
+
 
     .beneficios-grid{
 
@@ -233,6 +261,7 @@
     }
 
 
+
     .beneficio-card{
 
         padding:25px 20px;
@@ -241,7 +270,9 @@
 
 
 
+
     /* HORÁRIOS */
+
 
     .horarios-grid{
 
@@ -253,36 +284,33 @@
 
 
 
-/* GALERIA MOBILE */
 
-.galeria-grid{
-
-    grid-template-columns:1fr;
-    gap:20px;
-
-}
+    /* GALERIA */
 
 
-.galeria-grid img{
+    .galeria-grid{
 
-    width:100%;
-    height:260px;
+        grid-template-columns:1fr;
 
-    object-fit:cover;
-    object-position:center;
+    }
 
-    border-radius:15px;
 
-}
+
+    .galeria-grid img{
+
+        height:260px;
+
+        object-fit:cover;
+
+        border-radius:15px;
+
+    }
+
+
+
 
 
     /* AGENDAMENTO */
-
-    #agendamento{
-
-        padding:50px 0;
-
-    }
 
 
     .agendamento{
@@ -291,20 +319,8 @@
 
         padding:25px 20px;
 
-        border-radius:20px;
-
     }
 
-
-    .agendamento input,
-    .agendamento select,
-    .agendamento textarea{
-
-        font-size:14px;
-
-        padding:12px;
-
-    }
 
 
     .agendamento button{
@@ -315,89 +331,15 @@
 
 
 
+
     /* CONTATO */
+
 
     .contato-grid{
 
         grid-template-columns:1fr;
 
         gap:20px;
-
-    }
-
-
-    .contato-card{
-
-        padding:25px 20px;
-
-    }
-
-
-}
-
-@media (max-width:768px){
-
-
-    header{
-
-        position:fixed;
-
-    }
-
-
-    nav{
-
-        height:80px;
-
-        flex-direction:row;
-        justify-content:space-between;
-
-    }
-
-
-    .menu-toggle{
-
-        display:block;
-
-    }
-
-
-    nav > .btn{
-
-        display:none;
-
-    }
-
-
-    .menu{
-
-        position:absolute;
-
-        top:80px;
-        left:0;
-
-        width:100%;
-
-        background:#ebece5;
-
-        display:none;
-
-        flex-direction:column;
-
-        align-items:center;
-
-        gap:20px;
-
-        padding:25px 0;
-
-        box-shadow:0 10px 20px rgba(0,0,0,.1);
-
-    }
-
-
-    .menu.active{
-
-        display:flex;
 
     }
 

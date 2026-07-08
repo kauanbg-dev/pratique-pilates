@@ -173,7 +173,6 @@ nav{
 /* HERO */
 
 #home{
-
     min-height:100vh;
     display:flex;
     align-items:center;
@@ -181,45 +180,69 @@ nav{
     padding-top:120px;
 
     background:
-    linear-gradient(rgba(0,0,0,.35), rgba(0,0,0,.35)),
-    url("/assets/img/hero.jpg");
+    linear-gradient(
+        135deg,
+        #E8F5F3,
+        #F8F6F2
+    );
 
-    background-size:cover;
-    background-position:center;
+} 
+
+
+.hero-container{
+
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+
+    gap:60px;
 
 }
+
 
 
 .hero-content{
 
-    max-width:650px;
-    color:white;
+    flex:1;
+    max-width:550px;
 
 }
+
 
 
 .hero-content h1{
 
-    font-size:3.8rem;
+    font-size:3.5rem;
     line-height:1.2;
-    margin-bottom:20px;
+
+    color:#333;
+
+    margin-bottom:25px;
 
 }
+
 
 
 .hero-content span{
 
-    color:#EBECE5;
+    color:var(--verde);
 
 }
+
+
 
 .hero-content p{
 
     font-size:1.2rem;
+
+    color:var(--cinza);
+
     line-height:1.8;
+
     margin-bottom:35px;
 
 }
+
 
 
 .hero-buttons{
@@ -229,6 +252,60 @@ nav{
 
 }
 
+
+
+.btn-outline{
+
+    display:inline-flex;
+
+    align-items:center;
+    justify-content:center;
+
+    padding:14px 28px;
+
+    border:2px solid var(--verde);
+
+    border-radius:50px;
+
+    color:var(--verde);
+
+    transition:.3s;
+
+}
+
+
+.btn-outline:hover{
+
+    background:var(--verde);
+
+    color:white;
+
+}
+
+
+.hero-image{
+
+    flex:1;
+
+    display:flex;
+
+    justify-content:center;
+
+}
+
+
+
+.hero-image img{
+
+    width:100%;
+
+    max-width:500px;
+
+    border-radius:30px;
+
+    object-fit:cover;
+
+}
 
 .btn-outline{
 
@@ -651,5 +728,37 @@ section{
     color:var(--verde);
 
     cursor:pointer;
+
+}
+
+/* BOTÃO SECUNDÁRIO DO HERO */
+
+.hero-buttons .btn-outline{
+
+    display:inline-flex;
+
+    align-items:center;
+    justify-content:center;
+
+    padding:14px 28px;
+
+    border:2px solid var(--verde);
+
+    border-radius:50px;
+
+    color:var(--verde);
+
+    background:transparent;
+
+    transition:.3s;
+
+}
+
+
+.hero-buttons .btn-outline:hover{
+
+    background:var(--verde);
+
+    color:white;
 
 }
