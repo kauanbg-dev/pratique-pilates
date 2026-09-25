@@ -2,9 +2,9 @@
 
 Site institucional do estúdio: serviços, fotos e contato.
 
-**Site:** [pratique-pilates.vercel.app](https://pratique-pilates.vercel.app/)
+**Ao vivo:** [pratique-pilates.vercel.app](https://pratique-pilates.vercel.app/)
 
-O painel admin fica em outro repo: [adm-pilates](https://github.com/kauanbg-dev/adm-pilates).
+O painel administrativo está em [adm-pilates](https://github.com/kauanbg-dev/adm-pilates).
 
 ## Stack
 
@@ -12,4 +12,6 @@ O painel admin fica em outro repo: [adm-pilates](https://github.com/kauanbg-dev/
 - CSS
 - JavaScript
 
-É só abrir o `index.html` ou subir na Vercel (static).
+## Como rodar
+
+Abra o `index.html` no navegador ou faça deploy estático na Vercel.
